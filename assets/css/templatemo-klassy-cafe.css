@@ -919,7 +919,6 @@ menu
   overflow: hidden;
   background-size: cover;
   background-repeat: no-repeat;
-  overflow: hidden;
 }
 
 .card1 {
@@ -943,15 +942,10 @@ menu
   width: 100%;
   background-color: #4C642C;
   border: 1px solid #4C642C;
-  transform: translateY(100%)
-  translateY(120px)
-  translateZ(0);
-  transition: transform 0.5s ease-out;
-}
-
-.card:hover .info,
-.card:hover .info:before {
-  transform: translateY(200px) translateZ(0);
+  padding-bottom: 20px;
+  /* Remove hover transition */
+  transform: none;
+  transition: none;
 }
 
 .title {
@@ -965,6 +959,9 @@ menu
 .description {
   padding: 0px 30px;
   color: #fff;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 15px;
 }
 
 #menu .price h6 {
@@ -1001,8 +998,8 @@ menu
 #menu .owl-dots {
   display: none;
 }
-    
-#menu .owl-nav .owl-prev{
+
+#menu .owl-nav .owl-prev {
   margin-right: 10px;
   outline: none;
 }
@@ -1039,7 +1036,7 @@ menu
   opacity: 1;
 }
 
-#menu .owl-nav .owl-next{
+#menu .owl-nav .owl-next {
   margin-left: 10px;
   outline: none;
 }
@@ -1053,8 +1050,6 @@ menu
   content: '\f105';
 }
 
-
-/*
 ---------------------------------------------
 chefs
 ---------------------------------------------
